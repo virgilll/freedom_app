@@ -9,4 +9,8 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
+  validates :card_info, presence: true
+  validates :card_info, uniqueness: true, length: { minimum: 16 }
+  validates :card_info, numericality: true
+
 end
