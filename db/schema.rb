@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2022_03_01_110956) do
-
+ActiveRecord::Schema.define(version: 2022_03_01_144346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +22,21 @@ ActiveRecord::Schema.define(version: 2022_03_01_110956) do
     t.string "ticker"
     t.string "description"
     t.float "current_price"
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.float "amount"
+    t.date "transaction_date"
+    t.bigint "user_id", null: false
+    t.string "description"
+    t.bigint "coin_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.float "rounded_amount"
+    t.float "coin_amount"
+    t.boolean "processed"
+    t.index ["coin_id"], name: "index_transactions_on_coin_id"
+    t.index ["user_id"], name: "index_transactions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -41,4 +54,6 @@ ActiveRecord::Schema.define(version: 2022_03_01_110956) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "transactions", "coins"
+  add_foreign_key "transactions", "users"
 end
