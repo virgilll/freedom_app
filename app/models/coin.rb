@@ -4,4 +4,5 @@ class Coin < ApplicationRecord
   validates :current_price, presence: true
   validates :description, presence: true
   validates :ticker, presence: true
+
 end
