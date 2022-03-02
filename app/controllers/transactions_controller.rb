@@ -13,9 +13,17 @@ class TransactionsController < ApplicationController
 
   def create
     @transaction = Transaction.new(transaction_params)
+    @transaction.user = current_user
+    @transaction.coin = Coin.first
+    # TODO: calculate rounded amount and coin amount
+    # Rounded amount: ceiling - amount
+    #rounded_amount = amount.ceil - amount
+    # coin_amount: rounded / coin price
+
     if @transaction.save
-      redirect_to(@transaction, "New transaction added")
+      redirect_to root_path, notice: "New transaction added"
     else
+      # raise
       render :new
     end
   end
