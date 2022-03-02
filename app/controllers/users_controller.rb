@@ -3,4 +3,6 @@ class UsersController < ApplicationController
     @transaction = Transaction.where(user: current_user)
     # put everything u need for dashboard interfce here
   end
+
+  
 end
