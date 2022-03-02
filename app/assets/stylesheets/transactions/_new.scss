@@ -1,0 +1,32 @@
+body {
+  background-image:url(form.png) ;
+  background-size: cover;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+.container{
+  position: fixed; /* or absolute */
+  top: 20%;
+  left: 30%;
+}
+.h1{
+  margin-left: 150px;
+}
+.flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #1EDD88;
+}
