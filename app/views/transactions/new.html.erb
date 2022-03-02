@@ -1,6 +1,4 @@
-<header>
 
-</header>
 <div class="container pt-5 col-md-5 form">
   <%= simple_form_for @transaction do |t| %>
     <h1><strong>+</strong> Add a Transaction</h1>
@@ -8,9 +6,9 @@
 <%#= t.input :photo, as: :file %>
     <%= t.input :transaction_date, label:"Date of transaction", as: :date %>
     <%= t.input :amount, label: "Amout of the transaction" %>
-    <%= t.button :submit, "Update information", class: "text-black" %>
+    <%= t.button :submit, "Update information", class: "btn btn-light btn-form" %>
   </div>
-  
+
 
   <% end %>
 </div>
