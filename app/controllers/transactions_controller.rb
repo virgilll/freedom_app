@@ -17,7 +17,7 @@ class TransactionsController < ApplicationController
     @transaction.coin = Coin.first
     # TODO: calculate rounded amount and coin amount
     # Rounded amount: ceiling - amount
-    #rounded_amount = amount.ceil - amount
+    # rounded_amount = amount.ceil - amount
     # coin_amount: rounded / coin price
 
     if @transaction.save
