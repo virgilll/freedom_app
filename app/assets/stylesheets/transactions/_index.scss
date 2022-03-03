@@ -1,0 +1,29 @@
+.index-background{
+  background-color: whitesmoke;
+}
+.something-box{
+  display: block;
+}
+.transaction-list{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.title-transaction {
+  text-align: center;
+}
+
+.date-transactions {
+  width: 60%;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
