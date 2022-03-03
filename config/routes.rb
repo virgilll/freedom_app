@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :coins, only: :show
   get '/dashboard', to: 'users#dashboard'
   get '/help', to: 'pages#help'
+  resources :users, only: :show
 end
