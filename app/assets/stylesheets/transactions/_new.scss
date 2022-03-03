@@ -1,4 +1,4 @@
-body {
+.transaction {
   background-image:url(form.png) ;
   background-size: cover;
   min-height: 100vh;
@@ -8,14 +8,23 @@ body {
   width: 100vw;
   z-index: -1;
 }
+.title {
+  left: 50%;
+  margin-right: -50%;
+}
 
-.container{
+.transaction_container{
   position: fixed; /* or absolute */
-  top: 20%;
+  top: 30%;
   left: 30%;
   background-color: #C9C9C9;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-sizing: content-box;
+  padding: 75px;
+  width: fit-content;
+  block-size: fit-content;
+  box-shadow: 0 0 10px #000000;
 }
 .h1{
   margin-left: 150px;
@@ -36,8 +45,11 @@ body {
 }
 
 .btn-form {
+  margin:auto;
+  font-weight: bold;
   display: flex;
   text-align: center;
-  border: 2px solid black;
-  border-radius: 10px;
+  color: white;
+  border-radius: 8px;
+  background: #00838F;
 }
