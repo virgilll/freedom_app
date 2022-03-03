@@ -81,10 +81,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
+  position: relative;
 }
 
 .text-circle {
-  position: fixed;
+  position: absolute;
   top: 15px;
 }
