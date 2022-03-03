@@ -18,10 +18,13 @@
   top: 30%;
   left: 30%;
   background-color: #C9C9C9;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-sizing: content-box;
+  padding: 75px;
   width: fit-content;
   block-size: fit-content;
+  box-shadow: 0 0 10px #000000;
 }
 .h1{
   margin-left: 150px;

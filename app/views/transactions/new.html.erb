@@ -2,11 +2,11 @@
 <div class="transaction_container pt-5 col-md-5 form">
   <%= simple_form_for @transaction do |t| %>
   <div class="title"> <h1><strong>+</strong> Add a Transaction</h1> </div>
-    <%= t.input :description, label:"Description of the transaction", as: :text %>
+    <%= t.input :description, label:"Description of the transaction", as: :string %>
     <%#= t.input :photo, as: :file %>
     <%= t.input :transaction_date, label:"Date of transaction", as: :date %>
     <%= t.input :amount, label: "Amout of the transaction" %>
-    <%= t.button :submit, "Add Transaction", class: "btn btn-light btn-form" %>
+    <%= t.button :submit, "+ Add Transaction", class: "btn btn-light btn-form" %>
   </div>
   </div>
 
