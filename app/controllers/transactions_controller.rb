@@ -17,11 +17,12 @@ class TransactionsController < ApplicationController
     @transaction.coin = Coin.first
     @rounded_amount = @transaction.amount.ceil
     @coin_amount = @rounded_amount / Coin.bitcoin_price.to_f
-    @transaction.amount = @coin_amount
-    # TODO: calculate rounded amount and coin amount
-    # Rounded amount: ceiling - amount
-    # rounded_amount = amount.ceil - amount
-    # coin_amount: rounded / coin price
+    
+
+    # CREATE A TRANSACTION AND THEN CALCULATE THE ROUNDED AMOUNT, HOW MUCH THE ROUNDED AMOUNT IS WORTH IN BITCOIN
+    #  HOW MUCH BITCOIN I HAVE, HOW MANY DOLLARS HAVE SPENT ON BUYING IT
+
+
 
     if @transaction.save
       redirect_to dashboard_path, notice: "New transaction added"
