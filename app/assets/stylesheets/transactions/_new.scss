@@ -9,14 +9,15 @@
   z-index: -1;
 }
 .title {
-  left: 50%;
-  margin-right: -50%;
+  text-align: center;
 }
-
+.nav-item{
+padding-right: 15%;
+}
 .transaction_container{
   position: fixed; /* or absolute */
   top: 30%;
-  left: 25%;
+  left: 35%;
   background-color: #C9C9C9;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
