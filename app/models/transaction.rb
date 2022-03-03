@@ -9,3 +9,4 @@ class Transaction < ApplicationRecord
   # validates :coin_amount, numericality: true
   # validates :rounded_amount, numericality: true
 end
+
