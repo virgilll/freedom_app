@@ -15,13 +15,19 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.user = current_user
     @transaction.coin = Coin.first
+
     # TODO: calculate rounded amount and coin amount
     # Rounded amount: ceiling - amount
     # rounded_amount = amount.ceil - amount
     # coin_amount: rounded / coin price
 
+    # CREATE A TRANSACTION AND THEN CALCULATE THE ROUNDED AMOUNT, HOW MUCH THE ROUNDED AMOUNT IS WORTH IN BITCOIN
+    #  HOW MUCH BITCOIN I HAVE, HOW MANY DOLLARS HAVE SPENT ON BUYING IT
+
+
+
     if @transaction.save
-      redirect_to root_path, notice: "New transaction added"
+      redirect_to dashboard_path, notice: "New transaction added"
     else
       # raise
       render :new

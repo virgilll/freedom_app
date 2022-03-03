@@ -1,0 +1,12 @@
+<div>
+  <h1>My Transaction List</h1>
+  <ul>
+    <% @transactions.each do |transaction| %>
+      <li>  <%= transaction.description %>
+            <%= transaction.amount %>
+            <%= transaction.transaction_date %>
+            <%= transaction.coin_amount %>
+        <% end %>
+    </li>
+  </ul>
+</div>
