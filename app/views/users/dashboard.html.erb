@@ -10,11 +10,11 @@
             <div class="balance-circles">
               <div class="balance-circle">
                 <h3 class="text-circle">Balance</h3>
-                <h3>$5.00</h3>
+                <h3>$<%= @balance %></h3>
               </div>
               <div class="balance-circle">
                 <h3 class="text-circle">Earnings</h3>
-                <h3 class="price-up">$2.50</h3>
+                <h3 class="price-up">﹪<%= @earnings %></h3>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@
 
               <div class="holding-item">
                 <p>Price</p>
-                <p>43,400$</p>
+                <p>50,000$</p>
               </div>
               <div class="holding-item">
                 <p>24h change</p>
@@ -59,10 +59,3 @@
   </div>
 
 </div>
-
-
-
-
-
-
-<%= link_to "add transaction", new_transaction_path, class:"text-decoration-none" %>
