@@ -1,35 +1,52 @@
-.transaction {
+.add-transaction {
   background-image:url(form.png) ;
   background-size: cover;
-  min-height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
+  height: 100vh;
+  // width: 100vw;
   z-index: -1;
+  background-repeat: no-repeat;
 }
-.title {
-  text-align: center;
-}
-.nav-item{
-padding-right: 15%;
-}
-.transaction_container{
-  position: fixed; /* or absolute */
-  top: 30%;
-  left: 35%;
+
+.add-form {
+  margin-top: 110px;
   background-color: #C9C9C9;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  box-sizing: content-box;
-  padding: 75px;
-  width: fit-content;
-  block-size: fit-content;
-  box-shadow: 0 0 10px #000000;
+  padding: 40px;
 }
-.transaction-header{
-  margin-left: 150px;
+
+.add_button {
+  text-align: right;
+  width: 100%;
 }
+
+.date {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// .title {
+//   text-align: center;
+// }
+// .nav-item{
+//   padding-right: 15%;
+// }
+// .transaction_container{
+//   position: fixed; /* or absolute */
+//   top: 30%;
+//   left: 35%;
+//   background-color: #C9C9C9;
+//   border-radius: 10px;
+//   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+//   box-sizing: content-box;
+//   padding: 75px;
+//   width: fit-content;
+//   block-size: fit-content;
+//   box-shadow: 0 0 10px #000000;
+// }
+// .transaction-header{
+//   margin-left: 150px;
+// }
 .flash {
   padding: 16px 24px;
   display: flex;
@@ -45,52 +62,52 @@ padding-right: 15%;
   border: 2px solid #1EDD88;
 }
 
-.btn-form {
-  margin:auto;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
-  color: white;
-  border-radius: 8px;
-  background: #00838F;
-}
+// .btn-form {
+//   margin:auto;
+//   font-weight: bold;
+//   display: flex;
+//   text-align: center;
+//   color: white;
+//   border-radius: 8px;
+//   background: #00838F;
+// }
 
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-.profile {
-	background: #f9f9f9;
-	font-family: "Roboto", sans-serif;
-}
+// @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+// .profile {
+// 	background: #f9f9f9;
+// 	font-family: "Roboto", sans-serif;
+// }
 
-.shadow {
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-}
+// .shadow {
+// 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+// }
 
-.profile-tab-nav {
-	min-width: 250px;
-}
+// .profile-tab-nav {
+// 	min-width: 250px;
+// }
 
-.tab-content {
-	flex: 1;
-}
+// .tab-content {
+// 	flex: 1;
+// }
 
-.form-group {
-	margin-bottom: 1.5rem;
-}
+// .form-group {
+// 	margin-bottom: 1.5rem;
+// }
 
-.nav-pills a.nav-link {
-	padding: 15px 20px;
-	border-bottom: 1px solid #ddd;
-	border-radius: 0;
-	color: #333;
-}
-.nav-pills a.nav-link i {
-	width: 20px;
-}
+// .nav-pills a.nav-link {
+// 	padding: 15px 20px;
+// 	border-bottom: 1px solid #ddd;
+// 	border-radius: 0;
+// 	color: #333;
+// }
+// .nav-pills a.nav-link i {
+// 	width: 20px;
+// }
 
-.img-circle img {
-	height: 100px;
-	width: 100px;
-	border-radius: 100%;
-	border: 5px solid #fff;
-}
+// .img-circle img {
+// 	height: 100px;
+// 	width: 100px;
+// 	border-radius: 100%;
+// 	border: 5px solid #fff;
+// }

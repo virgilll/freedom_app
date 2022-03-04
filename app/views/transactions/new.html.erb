@@ -1,15 +1,32 @@
 
-<div class= transaction>
-<div class="transaction_container pt-5 col-md-5 form">
-  <%= simple_form_for @transaction do |t| %>
-  <div class="title"> <h1 class="transaction-header"><strong>+</strong> Add a Transaction </h1> </div>
-    <%= t.input :description, label:"Description of the transaction", as: :string %>
-    <%#= t.input :photo, as: :file %>
-    <%= t.input :amount, label: "Amout of the transaction" %>
-    <%= t.input :transaction_date, label:"Date of transaction", as: :date %>
-    <%= t.button :submit, "+ Add Transaction", class: "btn btn-light btn-form" %>
-  </div>
-  </div>
+<%# <div class= transaction>
+  <div class="transaction_container pt-5 col-md-5 form">
+    <%= simple_form_for @transaction do |t| %>
+    <%# <div class="title"> <h1 class="transaction-header"><strong>+</strong> Add a Transaction </h1> </div>
+      <%= t.input :description, label:"Description of the transaction", as: :string %>
+      <%#= t.input :photo, as: :file %>
+      <%# <%= t.input :amount, label: "Amout of the transaction" %>
+      <%# <%= t.input :transaction_date, label:"Date of transaction", as: :date %>
+      <%# t.button :submit, "+ Add Transaction", class: "btn btn-light btn-form" %>
+  <%# </div>
+</div> % %>
 
-  <% end %>
+<div class="add-transaction">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="add-form">
+          <h1 class="transaction-header"><strong>+</strong> Add a Transaction </h1>
+          <%= simple_form_for @transaction do |t| %>
+            <%= t.input :description, label:"Description of the transaction", as: :string %>
+            <%= t.input :amount, label: "Amout of the transaction" %>
+            <%= t.input :transaction_date, label:"Date of transaction", as: :date %>
+            <div class="add_button">
+              <%= t.button :submit, "+ Add Transaction", class: "btn btn-light btn-form" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
