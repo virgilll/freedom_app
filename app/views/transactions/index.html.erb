@@ -18,8 +18,11 @@
                           </div>
                           <div class="transaction-amount">
                             <h5><strong> Round up </strong> </h5>
-                            <p><%= (transaction.rounded_amount.to_f - transaction.amount.to_f).round(3) %>$</p>
-                            <%# transaction.coin_amount %>
+                            <p><%= transaction.rounded_amount.to_f.round(2) %>$</p>
+                          </div>
+                          <div class="transaction-btc">
+                            <h5><strong> BTC Purchased </strong> </h5>
+                            <p><%= transaction.coin_amount.round(5) %></p>
                           </div>
                             <div class="transaction-btc">
                             <h5><strong> BTC Purchased </strong> </h5>
