@@ -6,6 +6,8 @@ class Transaction < ApplicationRecord
   validates :transaction_date, presence: true
   validates :description, presence: true
   validates :description, length: { minimum: 3 }
+
+  
   # validates :coin_amount, numericality: true
   #validates :rounded_amount, numericality: true
 end

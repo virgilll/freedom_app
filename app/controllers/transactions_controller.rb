@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
   def index
-    @transactions_by_date = current_user.transactions.group_by { |transaction| transaction.transaction_date }
+    @transactions_by_date = current_user.transactions.order(transaction_date: :desc).group_by { |transaction| transaction.transaction_date }
   end
 
   def show
