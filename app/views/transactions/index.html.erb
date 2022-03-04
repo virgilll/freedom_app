@@ -21,6 +21,10 @@
                             <p><%= (transaction.rounded_amount.to_f - transaction.amount.to_f).round(3) %>$</p>
                             <%# transaction.coin_amount %>
                           </div>
+                            <div class="transaction-btc">
+                            <h5><strong> BTC Purchased </strong> </h5>
+                            <p><%= transaction.coin_amount %></p>
+                          </div>
                         </div>
                         <hr class="mt-1 mb-3">
                     <% end %>
