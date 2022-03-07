@@ -1,8 +1,8 @@
 // Specific CSS for your home-page
 .homepage-background{
-  background-image: asset-url("homepageimage.png");
+  background-image: asset-url("best_background.png");
   object-fit: cover;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   background-repeat: no-repeat;
   z-index: -1;
@@ -19,6 +19,41 @@
   height: 100vh;
   margin: 1em;
 }
+
+.icons-banner {
+  margin-top: 115px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr; // this makes each column have same width
+  justify-content: space-between;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-1 {
+  height: 10vh;
+  fill: rgb(153, 207, 204);
+  width: 10vh;
+}
+
+.svg-2 {
+  height: 10vh;
+  width: 10vh;
+  fill: rgb(153, 207, 204);
+}
+
+.svg-3 {
+  height: 10vh;
+  width: 10vh;
+  fill: rgb(153, 207, 204);
+}
+
 // .banner{
   // margin-top:350px;
   // margin-left: 600px;
@@ -88,9 +123,12 @@
   // padding-top: 2px;
 }
 
-.freedom-info-card-p {
-  margin: 0.5em;
-}
+// .freedom-info-card-p {
+//   margin: 0.5em;
+// }
+
+// .freedom-infos-card-p {}
+
 #help{
   font-style: normal;
   font-weight: 800;
@@ -105,19 +143,20 @@
 }
 
 .freedom-info-card {
-  background: white;
+  // background: white;
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 100%;
+  // width: 50%;
   align-items: center;
-  margin-top: 100px;
-  padding-top: 45px;
+  // margin-top: 100px;
+  // padding-top: 45px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50%/100px 100px 25px 25px;
-  height: 55vh;
-  box-shadow: 20px 20px rgba(0,0,0,.15);
-  transition: all .4s ease;
+  // margin: 0px;
+  // border-radius: 50%/100px 100px 25px 25px;
+  // height: 55vh;
+  // box-shadow: 20px 20px rgba(0,0,0,.15);
+  // transition: all .4s ease;
 }
 
 .big-freedom-info-card {
@@ -137,10 +176,10 @@
   transition: all .4s ease;
 }
 
-.freedom-info-card:hover{
-  border-radius: 50%/100px 100px 50px 50px;
-  box-shadow: 8px 8px rgba(0,0,0,.25);
-}
+// .freedom-info-card:hover{
+//   border-radius: 50%/100px 100px 50px 50px;
+//   box-shadow: 8px 8px rgba(0,0,0,.25);
+// }
 
 .big-freedom-info-card:hover {
   border-radius: 50px 50px 50px 50px;
