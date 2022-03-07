@@ -18,7 +18,7 @@ class TransactionsController < ApplicationController
     @transaction.rounded_amount = @transaction.amount.ceil - @transaction.amount
     @transaction.coin_amount = @transaction.rounded_amount / Coin.current_price.to_f
     if @transaction.save
-      redirect_to dashboard_path, notice: "New transaction added"
+      redirect_to transactions_path, notice: "New transaction added"
     else
       # raise
       render :new

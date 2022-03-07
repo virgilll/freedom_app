@@ -3,6 +3,22 @@
   background: white;
 }
 
+.avatar{
+  display:inline-block;
+  font-size:1em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  border-radius:50%;
+  background:#04838F;
+  opacity: 90%;
+  vertical-align:middle;
+  margin-right:1em;
+  color:white;
+  }
+
+
 .navbar-transparent {
   background: transparent;
   font-style: normal;
@@ -18,7 +34,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 4rem;
+  width: 4.5rem;
   height: 4rem;
   margin-top:10px;
   background: url(image.png);
@@ -27,4 +43,8 @@
   backdrop-filter: blur(4px);
   border-radius: 50%;
   margin-left: 35px;
+}
+.li {
+  position: relative;
+  padding-left: 11px;
 }

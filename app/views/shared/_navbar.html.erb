@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon <%= "navbar-transparent" if current_page?(controller: "/pages", action: "home")%>">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "birdnew.jpg" %>
+      <%= image_tag "birddzb.jpg" %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +20,8 @@
           <li class="nav-item">
             <%= link_to "My Portfolio", dashboard_path, class: "nav-link" %>
           </li>
-          <li class="nav-item dropdown">
-          <h5 class ="avatar dropdown-toggle" id= "navbarDropdown" data-bs-toggle ="dropdown">  <%="#{current_user.first_name.scan(/./)[0]} " + "#{current_user.last_name.scan(/./)[0]}" %> </h5>
+          <li class="nav-item ">
+          <li class ="avatar" id= "navbarDropdown" data-bs-toggle ="dropdown">  <%="#{current_user.first_name.scan(/./)[0]} " + "#{current_user.last_name.scan(/./)[0]}" %> </li>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Settings", user_path(current_user), class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
