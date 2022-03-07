@@ -7,6 +7,8 @@ class UsersController < ApplicationController
     @coin_balance = @transactions.sum(:coin_amount) #sum coin amnt of transactions
     @dollar_balance = (@coin_balance * Coin.current_price).round(2)
     @earnings = (@dollar_balance - @invested_amount).round(2)
+    @initial_amount = @dollar_balance - @earnings
+    @earnings_percentage = ((@dollar_balance - @initial_amount) / @initial_amount)
 
     url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1825&interval=monthly"
     historical_price = URI.open(url).read
