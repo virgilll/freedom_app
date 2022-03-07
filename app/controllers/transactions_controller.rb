@@ -16,7 +16,7 @@ class TransactionsController < ApplicationController
     @transaction.user = current_user
     @transaction.coin = Coin.first
     @transaction.rounded_amount = @transaction.amount.ceil - @transaction.amount
-    @transaction.coin_amount = @transaction.rounded_amount / Coin.bitcoin_price.to_f
+    @transaction.coin_amount = @transaction.rounded_amount / Coin.current_price.to_f
     if @transaction.save
       redirect_to dashboard_path, notice: "New transaction added"
     else
