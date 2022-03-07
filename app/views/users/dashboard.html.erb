@@ -26,7 +26,7 @@
         </div>
         <div class="col-6">
           <div class="dashboard-card">
-            <h3 class="text-graph">Graph</h3>
+            <h3 class="text-graph">Bitcoin 5yr Chart</h3>
             <%= line_chart @final_data %>
           </div>
         </div>
@@ -47,11 +47,11 @@
 
               <div class="holding-item">
                 <p>Price</p>
-                <p>$41,310</p>
+                  <p> $<%= Coin.current_price.to_i %> </p>
               </div>
               <div class="holding-item">
                 <p> % Return </p>
-                <p class="price-up">+60.54</p>
+               <p class="price-up">  <%=(@earnings_percentage*100).round(2) %></p>
               </div>
 
 
