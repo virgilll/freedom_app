@@ -37,20 +37,49 @@
             <h3 class="text-balance">Asset Overview</h3>
             <div class="holdings-info">
               <div class="holding-item">
-                <p>Asset</p>
+                <p> <strong> Asset </strong> </p>
                 <p>BTC</p>
               </div>
               <div class="holding-item">
-              <p>Coin Balance</p>
+              <p> <strong> Coin Balance </strong></p>
              <p><%=@coin_balance%></p>
               </div>
 
               <div class="holding-item">
-                <p>Price</p>
+                <p> <strong>Price </strong> </p>
                   <p> $<%= Coin.current_price.to_i %> </p>
               </div>
               <div class="holding-item">
-                <p> % Return </p>
+                <p> <strong> % Return </strong> </p>
+               <p class="price-up">  <%=(@earnings_percentage*100).round(2) %></p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="dashboard-card-below">
+            <h3 class="text-balance">My Porfolio Summary</h3>
+            <div class="holdings-info">
+              <div class="holding-item">
+                <p> <strong> Asset </strong> </p>
+                <p>BTC</p>
+              </div>
+              <div class="holding-item">
+              <p> <strong> Coin Balance </strong></p>
+             <p><%=@coin_balance%></p>
+              </div>
+
+              <div class="holding-item">
+                <p> <strong>Price </strong> </p>
+                  <p> $<%= Coin.current_price.to_i %> </p>
+              </div>
+              <div class="holding-item">
+                <p> <strong> % Return </strong> </p>
                <p class="price-up">  <%=(@earnings_percentage*100).round(2) %></p>
               </div>
 
@@ -64,3 +93,9 @@
   </div>
 
 </div>
+
+
+<h4>Your first round up was on <%= @transactions.order(transaction_date: :desc).last.transaction_date.strftime("%d/%m/%Y") %></h4>
+<h4>You had <%= @transactions.count  %> amount of roundups.</h4>
+<h4>Your return on investment is % <%= (@earnings_percentage*100).round(2)%></h4>
+<h4>The amount of Bitcoin you've accumulated <%= @coin_balance%></h4>

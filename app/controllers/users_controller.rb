@@ -9,16 +9,7 @@ class UsersController < ApplicationController
     @earnings = (@dollar_balance - @invested_amount).round(2)
     @initial_amount = @dollar_balance - @earnings
     @earnings_percentage = ((@dollar_balance - @initial_amount) / @initial_amount)
-
-    url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1825&interval=monthly"
-    historical_price = URI.open(url).read
-    data = JSON.parse(historical_price)
-    @final_data = data["prices"].map do |date_and_price|
-      date = date_and_price[0]
-      price = date_and_price[1]
-      formatted_date = Time.at(date/1000.0)
-      [formatted_date, price]
-    end
+    @final_data = Coin.graph
   end
 
   def show
