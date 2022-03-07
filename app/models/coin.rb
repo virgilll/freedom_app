@@ -11,11 +11,16 @@ class Coin < ApplicationRecord
     return user["bitcoin"]["usd"].to_f
   end
 
-  def price_graph
-    url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=730"
-    user_serialized = URI.open(url).read
-    user = JSON.parse(user_serialized)
-    puts user
-
+  def self.graph
+    url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1825&interval=monthly"
+    historical_price = URI.open(url).read
+    data = JSON.parse(historical_price)
+    final_data = data["prices"].map do |date_and_price|
+      date = date_and_price[0]
+      price = date_and_price[1]
+      formatted_date = Time.at(date/1000.0)
+      [formatted_date, price]
+    end
+    return final_data
   end
 end
