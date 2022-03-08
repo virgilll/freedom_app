@@ -1,5 +1,6 @@
 .navbar-lewagon {
   background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px black;
 }
 ul {
   position: relative;
@@ -65,6 +66,7 @@ ul {
 }
 .nav-link{
   margin-right: 90px;
+
 }
 .avatar{
   display:inline-block;
@@ -86,6 +88,7 @@ ul {
   font-style: normal;
   font-size: 18px;
   line-height: 35px;
+  box-shadow: 0.5px 0.5px 0.5px gray;
   color: rgba(0, 0, 0, 0.8);
 }
 
