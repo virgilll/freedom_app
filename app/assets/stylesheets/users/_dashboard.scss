@@ -40,32 +40,37 @@
 }
 
 .balance-circle {
-  width: 100px;
-  height: 100px;
-  @media(min-width: 860px) {
-    width: 200px;
-    height: 200px;
-  }
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 50%;
   // margin-left: 50px;
   // margin-top: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  // border: 2px solid #04838F;
+  // border-width: medium;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   flex-direction: column ;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-right: 1rem;
   margin-left: 0.9rem;
-  padding-top: 15px;
+  padding-top: 40px;
   padding-bottom: 15px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.74);
+  opacity: 0.8;
+  color: black;
+  transition: transform ease 0.2s;
+}
+
+.balance-circle:hover{
+  transform: scale(1.1);
 }
 
 .holdings-info {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -80,7 +85,11 @@
 }
 
 .price-up {
-  color:#00838F;
+  color: #04838F;
+}
+
+.price-up2 {
+  color: #04838F
 }
 
 .balance-circles {
@@ -94,8 +103,9 @@
 }
 
 .text-circle {
-  // position: absolute;
-  // top: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .dashboard-card-below {
@@ -112,4 +122,51 @@
 .flex-dashboard{
   display: flex;
   justify-content: space-evenly;
+}
+
+.popover-box {
+  // display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.40);
+  border-radius: 10px;
+  bottom: 12em;
+  left: 70%;
+  // transform: translate(-50%);
+  width: 8em;
+  padding: 0.2em;
+}
+
+.popover-box2 {
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.40);
+  border-radius: 10px;
+  bottom: 12em;
+  right: 67%;
+  width: 8em;
+  padding: 0.2em;
+}
+
+.relative {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.pop-text-box {
+  background-color: green;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.40);
+}
+
+.shadow {
+  height: 4px;
+  width: 150px;
+  box-shadow: 0 2rem 0.5rem gray !important;
+}
+
+.popover-p {
+  color: black;
+}
+
+.popover-p2 {
+  color: black;
 }

@@ -6296,6 +6296,11 @@ static-extend@^0.1.1:
   resolved "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
+stimulus-popover@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/stimulus-popover/-/stimulus-popover-5.0.1.tgz#54c1ada242ee09403e7d32231eec9669acd46f6b"
+  integrity sha512-l7EQ9Pqviv8KcTVYd1p4BjrPAy5mQzx8hdSka+tXRWSbgPeU+O1qgSIU1LlfcEXXyYPZLqx3XEPG0WTnA/Nkag==
+
 stimulus@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/stimulus/-/stimulus-3.0.1.tgz"
