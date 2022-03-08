@@ -40,8 +40,12 @@
 }
 
 .balance-circle {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  @media(min-width: 860px) {
+    width: 200px;
+    height: 200px;
+  }
   border-radius: 50%;
   // margin-left: 50px;
   // margin-top: 50px;

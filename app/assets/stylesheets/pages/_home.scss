@@ -1,9 +1,9 @@
 // Specific CSS for your home-page
 .homepage-background{
-  background-image: asset-url("gray.png");
+  background-image: asset-url("freedom.png");
   width: 100%;
   background-repeat: no-repeat;
-  opacity:0.8;
+  opacity:0.9;
   height: 90vh;
   padding-top: 100px;
   // width: 100vh;
@@ -61,19 +61,19 @@
   padding-bottom:50px;
 }
 .wealth-text {
-  font-size: 50px;
+  font-size: 30px;
   padding-bottom:50px;
 }
 .freedom-home{
   font-style: normal;
   font-weight: 800;
-  font-size: 102px;
-  line-height: 100%;
+  font-size: 195px;
+  line-height: 50%;
 }
 .wealth-text{
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 45px;
   line-height: 100%;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -81,7 +81,7 @@
   background-color: #00838F;
   color: white;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 30px;
   padding: 25px 35px;
   text-decoration: none;
 }
@@ -118,6 +118,7 @@
   color: rgba(0, 0, 0, 0.7);
   line-height: normal;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  font-family: 'Gilroy', sans-serif;
   // padding-top: 2px;
 }
 
@@ -133,6 +134,7 @@
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  font-family: 'Gilroy', sans-serif;
   margin-top: 1em;
   // color: rgba(0, 0, 0, 0.7);
   line-height: normal;
@@ -182,6 +184,7 @@
 .big-freedom-info-card:hover {
   border-radius: 50px 50px 50px 50px;
   box-shadow: 8px 8px rgba(0,0,0,.25);
+
 }
 
 .home-h1 {
