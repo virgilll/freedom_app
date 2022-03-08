@@ -1,6 +1,5 @@
 .navbar-lewagon {
-  background: rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px black;
+  color: rgba(185, 185, 185, 0.8);
 }
 ul {
   position: relative;
@@ -88,8 +87,7 @@ ul {
   font-style: normal;
   font-size: 18px;
   line-height: 35px;
-  box-shadow: 0.5px 0.5px 0.5px gray;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(185, 185, 185, 0.8);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -102,9 +100,12 @@ ul {
   width: 4rem;
   height: 4rem;
   background: url(image.png);
-  border: 4px solid rgba(0, 0, 0, 0.41);
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   border-radius: 50%;
   margin-left: 35px;
 }
+.container-fluid{
+  box-shadow: 0px 4px 16px -7px grey;
+}
+
