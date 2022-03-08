@@ -12,6 +12,9 @@ class UsersController < ApplicationController
     @final_data = Coin.graph
   end
 
+  def card
+  end
+
   def show
   end
 
