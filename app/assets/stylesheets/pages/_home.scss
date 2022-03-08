@@ -45,6 +45,9 @@
     position: absolute;
     transform: translateY(500px);
     transition: transform ease-out 0.4s;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right:20px;
   }
 }
 
@@ -57,7 +60,7 @@
 
 .icons:hover {
   border-radius: 0;
-  
+
   .always-visible {
     transform: translateY(-80px);
   }
