@@ -96,10 +96,7 @@
   font-size:150px;
   padding-bottom:50px;
 }
-.wealth-text {
-  font-size: 30px;
-  padding-bottom:50px;
-}
+
 .freedom-home{
   font-style: normal;
   font-weight: 800;
@@ -109,18 +106,20 @@
 .wealth-text{
   font-style: normal;
   font-weight: 800;
+  padding-bottom:40px;
   font-size: 45px;
-  line-height: 100%;
+  line-height: 55px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .explore {
 	background: black;
 	color: white;
-  border-radius: 35px;
 	position: relative;
 	outline: none;
 	border: none;
+  border-radius: 30px;
+  margin-left: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
