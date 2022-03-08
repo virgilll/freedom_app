@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+.tophelp{
+  margin-top: 80px;
+}
 .faq-title{
-  font-size: 100px;
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
 }
 .wrapper{
   padding: 0 20px;
   justify-content: center;
   margin-left: 176px;
-  margin-top: 170px;
+  margin-top: 40px;
   margin-right: 176px;
+}
+.faqdescription{
+  text-align: center;
+  font-style: italic;
+  color: gray;
 }
 .wrapper .parent-tab,
 .wrapper .child-tab{
@@ -22,7 +27,7 @@
 }
 .wrapper .parent-tab label,
 .wrapper .child-tab label{
-  background: gray;
+  background: #66a8b0;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -39,7 +44,6 @@
 .parent-tab input:checked ~ label,
 .child-tab input:checked ~ label{
   border-radius: 3px 3px 0 0;
-  background: black;
 }
 .wrapper label span{
   color: #fff;
@@ -101,4 +105,7 @@
 input[type="radio"],
 input[type="checkbox"]{
   display: none;
+}
+.helppage{
+  background-color: #fff;
 }
