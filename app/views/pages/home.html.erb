@@ -5,7 +5,9 @@
         <div class="freedom-card mt-2">
           <h1 class="freedom-home">Freedom</h1>
           <h2 class="wealth-text"> Build Wealth One Transaction at a Time. </h2>
-          <%= link_to "Get Started", new_user_registration_path, class:"start-button" %>
+          <%= link_to new_user_registration_path, class:"explore" do %>
+          Get Started
+          <% end %>
         </div>
       </div>
     </div>
