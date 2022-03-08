@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .faq-title{
-  font-size: 100px;
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
 }
 .wrapper{
   padding: 0 20px;
@@ -13,6 +11,11 @@
   margin-left: 176px;
   margin-top: 170px;
   margin-right: 176px;
+}
+.faqdescription{
+  text-align: center;
+  font-style: italic;
+  color: gray;
 }
 .wrapper .parent-tab,
 .wrapper .child-tab{
