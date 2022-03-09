@@ -120,13 +120,13 @@
                         <div class="compound-interest">
                         <%= form_tag dashboard_path, method: :post do %>
                             <div class="form-inputs">
-                              <p style="justify-self:stretch;"> Principal Amount <%= text_field_tag :principal,nil, placeholder: '$0' %> </p>
+                              <p> Beginning Amount <%= text_field_tag :principal,nil, placeholder: '$0' %> </p>
                               <p> Monthly Contributions <%= text_field_tag :monthly_contributions,nil, placeholder: '$' %>  </p>
-                              <p> Time (In Years)  <%= text_field_tag  :years,nil, placeholder: '1 to 10' %> </p>
+                              <p> Time Span (Years)  <%= text_field_tag  :years,nil, placeholder: '1 to 10' %> </p>
                               <p> Return (%) <%= text_field_tag  :interest,nil, placeholder: '0.0 to 1' %></p>
                             </div>
                               <div class="form-actions">
-                             <%= submit_tag "Calculate" %>
+                             <%= submit_tag "Calculate", class:"btn btn-secondary row-text-center"%>
                               </div>
                             <% end %>
                               <%= @compound_calculation['value']%>
