@@ -17,7 +17,7 @@ class Coin < ApplicationRecord
     data = JSON.parse(historical_price)
     final_data = data["prices"].map do |date_and_price|
       date = date_and_price[0]
-      price = date_and_price[1]
+      price = date_and_price[1].round(2)
       formatted_date = Time.at(date/1000.0)
       [formatted_date, price]
     end
