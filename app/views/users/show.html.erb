@@ -1,7 +1,7 @@
 <div class="container rounded bg-white mt-5">
     <div class="row">
         <div class="col-md-4 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://geo-media.beatsource.com/image_size/500x500/5/7/9/579c4cf0-09dd-4b0c-8c5f-643d15e22d85.jpg" width="90"><span class="font-weight-bold">Younes Latifi</span><span class="text-black-50">younes_latifi@gmail.com</span><span>Morocco</span></div>
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://geo-media.beatsource.com/image_size/500x500/5/7/9/579c4cf0-09dd-4b0c-8c5f-643d15e22d85.jpg" width="90"><span class="font-weight-bold"><%=current_user.first_name %> <%=current_user.last_name %> </span><span class="text-black-50"><%=current_user.email %>></span><span>Morocco</span></div>
         </div>
         <div class="col-md-8">
             <div class="p-3 py-5">
@@ -12,11 +12,11 @@
                     <h6 class="text-right">Edit Profile</h6>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6"><input type="text" class="form-control" placeholder="first name" value="Younes"></div>
-                    <div class="col-md-6"><input type="text" class="form-control" value="Latifi" placeholder="Latifi"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="first name" value=<%=current_user.first_name %>></div>
+                    <div class="col-md-6"><input type="text" class="form-control" value=<%=current_user.last_name %>></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Email" value="younes_latifi@gmail.com"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Email" value=<%=current_user.email %>></div>
                     <div class="col-md-6"><input type="text" class="form-control" value="+212661126543" placeholder="Phone number"></div>
                 </div>
                 <div class="row mt-3">
