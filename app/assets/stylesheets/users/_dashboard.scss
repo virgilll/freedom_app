@@ -170,3 +170,23 @@
 .popover-p2 {
   color: black;
 }
+.form-inputs {
+  text-align: left;
+}
+.holdings-info-below{
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+.form-inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.compound{
+  background-color: blue;
+}
