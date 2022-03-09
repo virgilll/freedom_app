@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/help', to: 'pages#help'
   resources :users, only: :show
   get '/information', to: 'users#information'
+
+  post '/dashboard', to: 'users#dashboard'
 end
