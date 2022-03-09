@@ -28,18 +28,15 @@ $duration: 100s;
 }
 
 .ticker-wrap {
-
-  position: fixed;
   bottom: 0;
   width: 100%;
   overflow: hidden;
   height: 4rem;
   background-color: rgba(rgb(255, 255, 255), 0.9);
   padding-left: 100%;
-  box-sizing: content-box;
+
 
   .ticker {
-
     display: inline-block;
     height: 4rem;
     line-height: 4rem;
@@ -63,5 +60,4 @@ $duration: 100s;
     }
   }
 }
-body { padding-bottom: 5rem; }
 h1,h2,p {padding: 0 5%;}

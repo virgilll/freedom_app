@@ -10,6 +10,7 @@
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.1",
     "chartkick": "^4.1.1",
+    "flatpickr": "^4.6.10",
     "stimulus": "^3.0.1",
     "stimulus-popover": "^5.0.1",
     "sweetalert": "^2.1.2",
