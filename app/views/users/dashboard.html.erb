@@ -112,9 +112,34 @@
             </div>
           </div>
         </div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <div class="dashboard-card">
+                                        <h3 class="pb-3" >Compound Interest Calculator</h3>
+                    <div class="holdings-info-below" style="background-color:#EFEFEF;">
+                        <div class="compound-interest">
+                        <%= form_tag dashboard_path, method: :post do %>
+                            <div class="form-inputs">
+                              <p style="justify-self:stretch;"> Principal Amount <%= text_field_tag :principal,nil, placeholder: '$0' %> </p>
+                              <p> Monthly Contributions <%= text_field_tag :monthly_contributions,nil, placeholder: '$' %>  </p>
+                              <p> Time (In Years)  <%= text_field_tag  :years,nil, placeholder: '1 to 10' %> </p>
+                              <p> Return (%) <%= text_field_tag  :interest,nil, placeholder: '0.0 to 1' %></p>
+                            </div>
+                              <div class="form-actions">
+                             <%= submit_tag "Calculate" %>
+                              </div>
+                            <% end %>
+                              <%= @compound_calculation['value']%>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </div>
-    <div class="compound-interest">
-    <h3> Compound Interest Calculator</h3>
+  </div>
+</div>
+
+<!-- >
     <%= form_tag dashboard_path, method: :post do %>
         <div class="form-inputs">
           <p> Principal (Beginning Investment Amount) <%= text_field_tag :principal %> </p>
@@ -132,3 +157,4 @@
   </div>
 
 </div>
+-->
