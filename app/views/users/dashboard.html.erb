@@ -113,6 +113,22 @@
           </div>
         </div>
     </div>
+    <div class="compound-interest">
+    <h3> Compound Interest Calculator</h3>
+    <%= form_tag dashboard_path, method: :post do %>
+        <div class="form-inputs">
+          <p> Principal (Beginning Investment Amount) <%= text_field_tag :principal %> </p>
+          <p> Monthly Contributions <%= text_field_tag :monthly_contributions%>  </p>
+          <p> Time (In Years) <%= text_field_tag  :years %> </p>
+          <p> Interest Rate <%= text_field_tag  :interest %> </p>
+        </div>
+        <div class="form-actions">
+           <%= submit_tag %>
+        </div>
+      <% end %>
+     <%= @compound_calculation['value']%>
+
+    </div>
   </div>
 
 </div>
