@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     url = "https://3jvichlsm2.execute-api.eu-west-2.amazonaws.com/dev/calculate/api?principal=#{params[:principal]}&interestRate=#{params[:interest]}&monthlyAmount=#{params[:monthly_contributions]}&termLength=#{params[:years]}"
     compound_link = URI.open(url).read
     @compound_calculation = JSON.parse(compound_link)
+    # raise
   end
 
   def card

@@ -20,3 +20,12 @@ import { initFlatpickr } from "../plugins/flatpickr";
 document.addEventListener("turbolinks:load", () => {
   initFlatpickr();
 })
+
+const dashboardbutton = document.querySelector(".hide")
+const submitbutton = document.querySelector("#javabutton")
+// console.log(submitbutton);
+// console.log(dashboardbutton);
+// submitbutton.addEventListener("click", (e) => {
+//   dashboardbutton.style.visibility = "visible";
+
+// })
