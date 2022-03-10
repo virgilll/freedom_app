@@ -189,3 +189,18 @@
 .form-actions{
 text-align: center;
 }
+.hide{
+  visibility:hidden;
+}
+#results{
+  color:#04838F;
+  font-size: 27px;
+  font-weight:bolder;
+  background-color: white;
+  width:40%;
+  left: 60%;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}

@@ -117,19 +117,22 @@
                 <div class="dashboard-card">
                                         <h3 class="pb-3" >Compound Interest Calculator</h3>
                     <div class="holdings-info-below" style="background-color:#EFEFEF;">
-                        <div class="compound-interest">
-                        <%= form_tag dashboard_path, method: :post do %>
+                        <div class="compound-interest" id="compoundCalculator">
+                        <%= form_tag dashboard_path(anchor:"compoundCalculator"), method: :post do %>
                             <div class="form-inputs">
-                              <p> Beginning Amount <%= text_field_tag :principal,nil, placeholder: '$0' %> </p>
-                              <p> Monthly Contributions <%= text_field_tag :monthly_contributions,nil, placeholder: '$' %>  </p>
-                              <p> Time Span (Years)  <%= text_field_tag  :years,nil, placeholder: '1 to 10' %> </p>
-                              <p> Return (%) <%= text_field_tag  :interest,nil, placeholder: '0.0 to 1' %></p>
+                              <p> Beginning Amount <%= text_field_tag :principal,nil, placeholder: '$0', value: params[:principal] %> </p>
+                              <p> Monthly Contributions <%= text_field_tag :monthly_contributions,nil, placeholder: '$', value: params[:monthly_contributions] %>  </p>
+                              <p> Time Span (Years)  <%= text_field_tag  :years,nil, placeholder: '1 to 10',value: params[:years] %> </p>
+                              <p> Return (%) <%= text_field_tag  :interest,nil, placeholder: '0.0 to 1',value: params[:interest] %></p>
                             </div>
                               <div class="form-actions">
-                             <%= submit_tag "Calculate", class:"btn btn-secondary row-text-center"%>
+                             <%= submit_tag "Calculate", id:"javabutton", class:"btn btn-secondary row-text-center rounded"%>
                               </div>
-                            <% end %>
-                              <%= @compound_calculation['value']%>
+                          <% end %>
+                              <% if params[:principal].present? %>
+                                <p id="results"> Your porfolio value will be: $ <%= @compound_calculation['value']%> </p>
+                              <% end %>
+                              <p style="text-align:left; opacity:0.7; padding-top: 20px;">*The 5 year Bitcoin return from March 2017 to March 2022 is <strong> %4,538 </strong> </p>
                             </div>
                     </div>
                   </div>
