@@ -18,9 +18,9 @@
         <div class="add-form">
           <h1 class="transaction-header"><strong>+</strong> Add a Transaction </h1>
           <%= simple_form_for @transaction do |t| %>
-            <%= t.input :description, label:"Description of the transaction", as: :string %>
-            <%= t.input :amount, label: "Amout of the transaction" %>
-            <%= t.input :transaction_date, as: :string, input_html: {class: "datepicker"} %>
+            <%= t.input :description, label:"Description of the transaction", as: :string, input_html: { required: true }%>
+            <%= t.input :amount, label: "Amout of the transaction", input_html: { required: true } %>
+            <%= t.input :transaction_date, as: :string, input_html: {class: "datepicker", required: true} %>
             <div class="add_button">
               <%= t.button :submit, "+ Add Transaction", class: "btn btn-light btn-form" %>
             </div>

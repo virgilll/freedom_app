@@ -21,7 +21,7 @@ class TransactionsController < ApplicationController
       redirect_to transactions_path, notice: "New transaction added"
     else
       # raise
-      render :new
+      redirect_to new_transaction_path
     end
   end
 
