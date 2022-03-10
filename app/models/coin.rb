@@ -1,7 +1,10 @@
 class Coin < ApplicationRecord
+  require 'open-uri'
+
   has_many :transactions
   validates :description, presence: true
   validates :ticker, presence: true
+
 
   def self.current_price
     url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true'
